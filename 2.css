@@ -98,3 +98,12 @@ button:hover{
   transform: scale(1.1);
   color: yellow;
 }
+
+@media screen and (min-width: 600px){
+ button{
+   font-size: 24px;
+ }  
+ #linux_editor,#android_editor{
+   font-size: 20px;
+ }
+}
