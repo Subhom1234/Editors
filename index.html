@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Layout</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+      <div id="First_Page">
+        
+
+      <h1><u><b>HTML Code Editors</b></u></h1>
+    <div class="sub">
+              <div class="horizontal-list">
+                <!-- Horizontal -->
+                    <div class="sub1">
+                <ul>
+                    <li>
+    
+     <button onclick="Home()"><b>Home</b></button></li>
+                  
+                  <li>
+    
+     <button onclick="Mobile()"><b>For Mobile</b></button></li>
+                  <li>
+                   
+                            <button onclick="Desktop()"><b>For Desktop/Laptop</b></button></li>
+                            </div>
+
+              </div>
+    
+          </div>
+      </div>
+      <div id="second_page">
+        
+        <div class="vertical-list" id="linux_editor">
+            <h2><u>Editors</u></h2>
+            <ul>
+                <li>Spck Editor</li>
+                <li>Mobile Default Editor</li>
+                <li>Web Editor</li>
+            </ul>
+        </div>
+
+        <div class="vertical-list" id="Home_home">
+
+<h2>Let's know<br> about code editor....</h2>
+        </div>
+
+        
+        
+    <div class="vertical-list" id="android_editor">
+     <h2><u>Editors</u></h2>
+                  <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Web Editor</li>
+                    <li>Note pad</li>
+                    <li>Code Pen</li>
+                  </ul>
+                </div>
+              </div>
+              
+    </div>
+
+    
+    <script>
+      function Mobile(){
+        document.getElementById('Home_home').style.display = 'none';
+        document.getElementById('linux_editor').style.display = 'block';
+        document.getElementById('android_editor').style.display = 'none';
+      }
+      
+      function Desktop() {
+         document.getElementById('linux_editor').style.display = 'none';
+         document.getElementById('Home_home').style.display = 'none';
+        document.getElementById('android_editor').style.display = 'block';
+      }
+      function Home() {
+         document.getElementById('linux_editor').style.display = 'none';
+         document.getElementById('android_editor').style.display = 'none';
+        document.getElementById('Home_home').style.display = 'block';
+      }
+    </script>
+</body>
+
+</html>
